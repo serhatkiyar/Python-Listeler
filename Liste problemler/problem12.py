@@ -13,12 +13,12 @@ for i in yazi:
     else:
         sayac = 0
     index += 1
-    if sayac + 1 == len(kelime):
+    if sayac == len(kelime):
         break
 
-if sayac + 1 != len(kelime):
+if sayac != len(kelime):
     print("Bu kelime bu metinde yer almıyor.")
 
-yeniyazi = f'{yazi[:index - len(kelime) + 1]}"{yazi[index - len(kelime) + 1: index + 1]}"{yazi[index + 1:]}'
+yeniyazi = f'{yazi[:index - len(kelime)]}"{yazi[index - len(kelime): index]}"{yazi[index:]}'
 
 print(yeniyazi)
