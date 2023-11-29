@@ -10,13 +10,13 @@ while True:
         print("Liste Kaydedildi")
         break
     else:
-        liste.append(int(sayi))
+        liste.append(sayi)
 
 
 sayi_bul = input("Oluşturulan listedeki tekrar sayısını bulmak istediğiniz sayıyı giriniz(Bütün tekrar sayıları için 'a' tuşuna basınız.): ")
 
 if sayi_bul in liste:
-    print("{} sayısı oluşturulan listede {} kez tekrar ediliyor.".format(sayi_bul, liste.count(int(sayi_bul))))
+    print("{} sayısı oluşturulan listede {} kez tekrar ediliyor.".format(sayi_bul, liste.count(sayi_bul)))
 else:
     print("{} sayısı oluşturulan listede bulunmuyor....".format(sayi_bul))
 if sayi_bul == "a":
